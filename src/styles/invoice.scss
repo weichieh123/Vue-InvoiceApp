@@ -20,6 +20,7 @@ $hightlightColor: rgb(250, 251, 189);
 }
 #invoice-list-item {
   &.row {
+    cursor: pointer;
     border-top: 1px solid gray;
     padding: 15px 5px;
     &:last-of-type{
@@ -51,21 +52,24 @@ $hightlightColor: rgb(250, 251, 189);
         min-width: 470px;
         max-width: 540px;
         margin: 0 auto;
-        padding: 1rem;
-        border-bottom: 1px solid #17a2b8;
+        padding: 0.8rem;
+        // border-bottom: 1px solid #17a2b8;
         background-color: #fff;
-        font-size: 2rem;
-        color: #17a2b8;
         text-align: center;
+        .title {
+          font-size: 1.7rem;
+          color: #17a2b8;
+          font-weight: bold;
+        }
       }
       .modal-body {
         cursor: auto;
-        display: block;
+        // display: block;
         width: 50%;
         min-width: 470px;
         max-width: 540px;
         margin: 0 auto;
-        padding: 3rem 2rem;
+        padding: 1rem;
         background-color: #fff;
       }
       .modal-footer {

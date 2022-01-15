@@ -9,9 +9,11 @@
       v-for="(invoice, index) in invoices"
       :key="index"
       :invoice="invoice"
-      @toggle="toggleDetailModal"
+      @toggle="toggleDetailModal(index)"
     />
-    <MyModal v-if="showDetailModal" />
+    <MyModal v-if="showDetailModal" @toggle="toggleDetailModal"
+    :item="invoices[modalInvIndex]"
+     />
   </div>
 </template>
 
@@ -23,18 +25,11 @@ import MyModal from '../components/MyModal.vue'
 
 export default {
   name: 'InvoiceList',
-  // props: {
-  //   invoices: {
-  //     type: Array,
-  //     default: function() {
-  //       return []
-  //     }
-  //   }
-  // },
   data() {
     return {
       invoices: [],
       showDetailModal: false,
+      modalInvIndex: 0,
     }
   },
   components: {
@@ -60,8 +55,10 @@ export default {
       console.log('YearMonthDay', YearMonthDay)
       return `${Month}/${Day}`
     },
-    toggleDetailModal() {
+    toggleDetailModal(index) {
       this.showDetailModal = !this.showDetailModal
+      this.modalInvIndex = index
+      console.log(this.modalInvIndex)
     },
   },
   computed: {
