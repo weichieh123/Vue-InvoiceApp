@@ -1,0 +1,69 @@
+ {
+  "invoices": [
+    {
+      "id": 8166929,
+      "invNum": "UN14914477",
+      "status": "已確認",
+      "type": 0,
+      "time": "2021-12-31 13:39:33",
+      "amount": 372,
+      "sellerName": "家樂福大安店",
+      "details": [
+        {
+          "description": "即食珍珠",
+          "quantity": 2,
+          "unitPrice": 55,
+          "amount": 110
+        },
+        {
+          "description": "抹布",
+          "quantity": 5,
+          "unitPrice": 20,
+          "amount": 100
+        },
+        {
+          "description": "全脂鮮乳(XL)",
+          "quantity": 1,
+          "unitPrice": 162,
+          "amount": 162
+        }
+      ]
+    },
+    {
+      "id": 5740460,
+      "invNum": "QX79208795",
+      "status": "已確認",
+      "type": 1,
+      "time": "2021-12-20 18:23:10",
+      "amount": 636,
+      "sellerName": "最好吃日式食堂北車門市",
+      "details": [
+        {
+          "description": "【UberEats外送】香菇蔬菜丼",
+          "quantity": 1,
+          "unitPrice": 210,
+          "amount": 210
+        },
+        {
+          "description": "【外帶】鮭魚丼",
+          "quantity": 1,
+          "unitPrice": 570,
+          "amount": 570
+        },
+        {
+          "description": "折扣",
+          "quantity": 1,
+          "unitPrice": -144,
+          "amount": -144
+        }
+      ]
+    },
+    {
+      "id": 6245879,
+      "invNum": "QU69368453",
+      "status": "驗證中",
+      "time": "2021-12-11 00:00:00",
+      "type": 1
+    }
+  ]
+}

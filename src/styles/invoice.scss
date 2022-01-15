@@ -1,0 +1,44 @@
+// * {
+//     outline: 1px solid red;
+// }
+
+$mainColor: #17a2b8;
+$mainTextColor: white;
+
+$hightlightColor: rgb(250, 251, 189);
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+#nav {
+    padding: 25px;
+    background-color: $hightlightColor;
+    a {
+      font-weight: bold;
+      color: #bbb;
+
+      &.router-link-exact-active {
+        color: $mainColor;
+      }
+    }
+  }
+#add-invoive {
+    input {
+        height: 40px;
+        width: 100%;
+        margin: 5px 0;
+        outline: 1px solid rgb(93, 136, 165);
+        color: #666;
+        &:focus-visible {
+            outline: 1px solid rgb(93, 136, 165);
+        }
+    }
+    button {
+        background-color: $mainColor;
+        color: $mainTextColor;
+    }
+}
