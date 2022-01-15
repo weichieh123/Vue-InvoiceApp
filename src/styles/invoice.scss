@@ -4,16 +4,8 @@
 
 $mainColor: #17a2b8;
 $mainTextColor: white;
-
 $hightlightColor: rgb(250, 251, 189);
 
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 #nav {
     padding: 25px;
     background-color: $hightlightColor;
@@ -26,16 +18,70 @@ $hightlightColor: rgb(250, 251, 189);
       }
     }
 }
-#invoice-list {
-  .row {
+#invoice-list-item {
+  &.row {
     border-top: 1px solid gray;
     padding: 15px 5px;
+    &:last-of-type{
+      border-bottom: 1px solid gray;
+    }
   }
-  &:last-of-type{
-    border-bottom: 1px solid gray;
-  }
+  
 }
 
+#my-modal {
+  &.modal-mask {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    .modal-container {
+      cursor: pointer;
+      display: table-cell;
+      vertical-align: middle;
+      .modal-header {
+        cursor: auto;
+        display: block;
+        width: 50%;
+        min-width: 470px;
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 1rem;
+        border-bottom: 1px solid #17a2b8;
+        background-color: #fff;
+        font-size: 2rem;
+        color: #17a2b8;
+        text-align: center;
+      }
+      .modal-body {
+        cursor: auto;
+        display: block;
+        width: 50%;
+        min-width: 470px;
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        background-color: #fff;
+      }
+      .modal-footer {
+        cursor: auto;
+        display: block;
+        width: 50%;
+        min-width: 470px;
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 0.6rem;
+        background-color: #fff;
+        // border-top: 1px solid #17a2b8;
+      }
+    }
+  }
+}
 #add-invoive {
     input {
         height: 40px;

@@ -1,7 +1,7 @@
 <template>
   <div id="add-invoive" class="col-10 mx-auto">
     <div class="row mb-3">
-      <div class="col-12 text-start">
+      <div class="col-12">
         <h4>發票號碼</h4>
       </div>
       <div class="col-4">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="row mb-3">
-      <div class="col-12 text-start">
+      <div class="col-12">
         <h4>開立時間</h4>
       </div>
       <div class="col-4">
